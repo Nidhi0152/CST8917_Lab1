@@ -102,3 +102,68 @@ This project implements a Python Azure Function (v2 programming model) that writ
 
 ---
 
+
+
+# Azure Function to Azure SQL Output Binding (Remote Demo)
+
+This short guide demonstrates how to trigger a deployed Azure Function and verify its output in an Azure SQL Database — all done remotely.
+
+---
+
+## 🎯 Objective
+
+- Execute the Azure Function from Visual Studio Code (remotely).
+- Confirm the data is written to the `ToDo` table in Azure SQL Database.
+
+---
+
+## ✅ Step 1: Execute Function in Azure
+
+### 💬 Short Script
+
+> "I’m triggering the Azure Function deployed in the cloud using VS Code.  
+> The function runs successfully and sends data to the Azure SQL Database."
+
+### ▶️ Instructions
+
+1. Open **VS Code**
+2. Go to **Azure: Functions** tab (left sidebar)
+3. Expand your function app → Right-click the function (e.g., `HttpTrigger1`)
+4. Select **Execute Function Now**
+5. Enter this request body:
+```json
+{ "name": "Azure" }
+```
+6. Press **Enter**
+
+---
+
+## ✅ Step 2: Verify Output in Azure SQL
+
+### 💬 Short Script
+
+> "Now, I’ll check the table using Query Editor.  
+> And here’s the new row inserted — the output binding is working as expected."
+
+### ▶️ Instructions
+
+1. Go to **Azure Portal**
+2. Navigate to your **SQL Database**
+3. Open **Query editor**
+4. Log in using your `azureuser` and password
+5. Run:
+```sql
+SELECT * FROM dbo.ToDo;
+```
+
+6. ✅ You should see the new row with the `name` value you passed
+
+---
+
+## ✅ Closing Line (Optional)
+
+> "This confirms that my Azure Function is successfully inserting data into the Azure SQL Database, all running in the cloud."
+
+---
+
+
