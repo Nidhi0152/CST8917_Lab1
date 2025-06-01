@@ -4,9 +4,9 @@ This project implements a Python Azure Function (v2 programming model) that writ
 
 ---
 
-## 🚀 What I Did
+##  What I Did
 
-### 🔧 Environment Setup (WSL)
+###  Environment Setup (WSL)
 
 1. Installed Node.js:
    ```bash
@@ -26,7 +26,7 @@ This project implements a Python Azure Function (v2 programming model) that writ
 
 ---
 
-## 🧰 Azure Function Project Creation
+##  Azure Function Project Creation
 
 1. In VS Code:  
    `F1` → `Azure Functions: Create New Project...`
@@ -48,7 +48,7 @@ This project implements a Python Azure Function (v2 programming model) that writ
 
 ---
 
-## 🌐 Azure Setup
+##  Azure Setup
 
 1. **Created Azure Function App** using:
    - `F1` → `Azure Functions: Create Function App in Azure`
@@ -60,7 +60,7 @@ This project implements a Python Azure Function (v2 programming model) that writ
 
 ---
 
-## ☁️ Deployment and Testing
+##  Deployment and Testing
 
 1. **Deployed to Azure**:
    ```bash
@@ -77,11 +77,11 @@ This project implements a Python Azure Function (v2 programming model) that writ
    { "name": "Azure" }
    ```
 
-3. ✅ Function successfully executed and wrote message to `outqueue`.
+3.  Function successfully executed and wrote message to `outqueue`.
 
 ---
 
-## 📦 Queue Verification
+##  Queue Verification
 
 1. Opened **Azure Storage Explorer**
 2. Connected to my Azure account
@@ -93,7 +93,7 @@ This project implements a Python Azure Function (v2 programming model) that writ
 
 ---
 
-## 💡 What I Learned
+##  What I Learned
 
 - How to write Azure Functions in Python using the v2 model
 - How to configure and use output bindings to Azure Storage Queues
@@ -110,21 +110,21 @@ This short guide demonstrates how to trigger a deployed Azure Function and verif
 
 ---
 
-## 🎯 Objective
+##  Objective
 
 - Execute the Azure Function from Visual Studio Code (remotely).
 - Confirm the data is written to the `ToDo` table in Azure SQL Database.
 
 ---
 
-## ✅ Step 1: Execute Function in Azure
+##  Step 1: Execute Function in Azure
 
-### 💬 Short Script
+###  Short Script
 
 > "I’m triggering the Azure Function deployed in the cloud using VS Code.  
 > The function runs successfully and sends data to the Azure SQL Database."
 
-### ▶️ Instructions
+###  Instructions
 
 1. Open **VS Code**
 2. Go to **Azure: Functions** tab (left sidebar)
@@ -138,14 +138,14 @@ This short guide demonstrates how to trigger a deployed Azure Function and verif
 
 ---
 
-## ✅ Step 2: Verify Output in Azure SQL
+##  Step 2: Verify Output in Azure SQL
 
-### 💬 Short Script
+###  Short Script
 
 > "Now, I’ll check the table using Query Editor.  
 > And here’s the new row inserted — the output binding is working as expected."
 
-### ▶️ Instructions
+###  Instructions
 
 1. Go to **Azure Portal**
 2. Navigate to your **SQL Database**
@@ -156,14 +156,17 @@ This short guide demonstrates how to trigger a deployed Azure Function and verif
 SELECT * FROM dbo.ToDo;
 ```
 
-6. ✅ You should see the new row with the `name` value you passed
+6.  You should see the new row with the `name` value you passed
 
 ---
 
-## ✅ Closing Line (Optional)
+##  Closing Line (Optional)
 
 > "This confirms that my Azure Function is successfully inserting data into the Azure SQL Database, all running in the cloud."
 
 ---
+## Video Link
+[https://youtu.be/mBmWlE5qtXE]
+[https://youtu.be/dBF1IP816n4]
 
 
